@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "format": "prettier --config .prettierrc.yaml --write '**/*.{js,json,jsx,md,ts,tsx,yaml,yml}'",
+    "format:check": "pnpm run format --check"
   },
   "dependencies": {
     "neverthrow": "^6.2.1",
